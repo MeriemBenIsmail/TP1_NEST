@@ -41,7 +41,7 @@ export class TodoService {
         return this.todos;
     }
   
-    addTodo(body: Todo): CreateTodoDTO {
+    addTodo(body: CreateTodoDTO): CreateTodoDTO {
         let newTodo = new Todo();
         newTodo.id = uuid4();
         newTodo = {...newTodo,...body}

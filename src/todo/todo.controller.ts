@@ -29,7 +29,7 @@ export class TodoController {
         return this.todoService.getTodos();
     }
     @Post() 
-    addTodo(@Body() body: Todo): CreateTodoDTO{
+    addTodo(@Body() body: CreateTodoDTO): CreateTodoDTO{
       return this.todoService.addTodo(body);
     }
 }
